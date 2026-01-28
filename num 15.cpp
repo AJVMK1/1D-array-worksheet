@@ -3,24 +3,24 @@ using namespace std;
 
 int main()
 {
-    int S = 10;
+    int S = 6;
     int arr [S];
     cout << "Input " << S << " Values below " << endl;
     for(int i = 0; i < S; i++){
         cout << "Input Value # " << i + 1 << endl;
         cin >> arr[i];
     }
-    int even = 0;
 
-        for(int b = 0; b < S; b++){
-            if(arr[b] % 2 == 0){
-                even++;
-            }
+    int min = arr[0];
+
+    for(int y = 1; y < S; y++){
+        if(min > arr[y]){
+            min = arr[y];
+        }
     }
 
-    cout << "The Even count is " << even;
+    cout << "Minimum is: " << min;
 
 
-    
     return 0;
 }

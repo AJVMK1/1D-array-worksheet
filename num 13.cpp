@@ -3,24 +3,26 @@ using namespace std;
 
 int main()
 {
-    int S = 10;
+    int S = 6;
     int arr [S];
     cout << "Input " << S << " Values below " << endl;
     for(int i = 0; i < S; i++){
         cout << "Input Value # " << i + 1 << endl;
         cin >> arr[i];
     }
-    int even = 0;
+    int M;
+    int IN;
+    cout << "Input index to replace ";
+    cin >> M;
+    cout << "Input Value to replace it with ";
+    cin >> IN;
 
-        for(int b = 0; b < S; b++){
-            if(arr[b] % 2 == 0){
-                even++;
-            }
+    arr[M] = IN;
+
+
+    for(int x = 0; x < 5; x++) {
+        cout << arr[x] << " ";
     }
 
-    cout << "The Even count is " << even;
-
-
-    
     return 0;
 }

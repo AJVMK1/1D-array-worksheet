@@ -10,17 +10,15 @@ int main()
         cout << "Input Value # " << i + 1 << endl;
         cin >> arr[i];
     }
-    int even = 0;
 
-        for(int b = 0; b < S; b++){
-            if(arr[b] % 2 == 0){
-                even++;
-            }
+    int sum = 0;
+
+     for(int b = 1; b < S; b += 2){
+            sum = sum + arr[b];
+            
     }
 
-    cout << "The Even count is " << even;
+    cout << " Sum of odd indicies is " << sum;
 
-
-    
     return 0;
 }
